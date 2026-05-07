@@ -1,0 +1,10 @@
+@EndUserText.label: 'Agency'
+@MappingRole: true
+define role ZDM_AGENCY {
+    grant
+        select
+            on
+               zdm_agency
+              where (AgencyId) = aspect pfcg_auth( ZAUTH01, ZAgency_Id, ACTVT = '03' );
+                       
+}

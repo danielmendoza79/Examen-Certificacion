@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_ABAPDTRAVEL_DM'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_ABAPDTRAVEL_DM'
+  }
+}
+define service ZUI_ABAPDTRAVEL_DM_O4 provider contracts odata_v4_ui {
+  expose ZC_ABAPDTRAVEL_DM;
+}
